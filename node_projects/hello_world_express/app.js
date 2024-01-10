@@ -1,10 +1,11 @@
 const express = require('express');
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT;
+const anotherVariable = process.env.VARIABLE_TESTE;
 
 app.get('/', (req, res) => {
-    res.send("Hello world!");
+    res.send(anotherVariable);
 });
 
 app.listen(port, () => {

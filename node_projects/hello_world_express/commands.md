@@ -11,3 +11,14 @@
 
 ### Inspect a container
 ```docker inspect container-id```
+
+### Add image to docker hub
+Link => [docker hub](https://hub.docker.com/)
+```docker build -t dockerhubusername/hello-world-express:1.0 .```
+To test => ```docker run -d -p 8000:4000 dockerhubusername/hello-world-express:1.0```
+```docker push dockerhubusername/hello-world-express:1.0```
+
+- To add new tag
+```docker build -t dockerhubusername/hello-world-express:2.0 .```
+To test => ```docker run -d -p 8000:4000 dockerhubusername/hello-world-express:2.0``` 
+```docker push dockerhubusername/hello-world-express:2.0```

@@ -1,0 +1,13 @@
+services:
+  app_hello_world_express:
+    container_name: my_app_hello_world_express
+    build: 
+      context: ./
+      dockerfile: ./Dockerfile
+    ports: 
+      - 127.0.0.1:8000:6000
+
+# The build that references the Dockerfile also could be like that :
+#services:
+  # myservice:
+  #   build: .

@@ -1,0 +1,2 @@
+### Can I map the ports using the docker file ?
+No, you don't map ports in the Dockerfile itself. The port mapping is typically done when you run a container based on an image. The port mapping configuration is part of the docker run command or specified in a Docker Compose file.
